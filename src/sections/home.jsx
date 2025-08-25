@@ -67,7 +67,7 @@ const Home = () => {
         transition={{ duration: 1, delay: 0.5 }}
       >
         <motion.img
-          src="src/assets/samarth_photo(3).jpg"
+          src="/images/samarth_photo(3).jpg"
           alt="samarth's DP"
           className="sam_dp"
           whileHover={{ scale: 1.05, rotate: 2 }}

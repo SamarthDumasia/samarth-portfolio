@@ -20,12 +20,15 @@
 
 /* Light blue theme colors */
 :root {
-  --primary-light: #4a90e2;
-  --bg-light: #f0f8ff;
-  --bg-light-secondary: #e1f0ff;
-  --text-light: #2c3e50;
-  --accent-light: #66b2ff;
-  --border-light: #cce4ff;
+  --primary-blue: #3A86FF;    /* A more vibrant, modern blue */
+  --secondary-blue: #eef2f7;  /* A very light, subtle blue-gray for backgrounds */
+  --bg-light: #f8f9fa;        /* Soft off-white for the main background */
+  --bg-lighter: #ffffff;      /* Pure white for cards to make them pop */
+  --text-dark: #212529;       /* A standard, highly readable dark gray for text */
+  --text-light: #ffffff;
+  --accent-blue: #8ECAE6;     /* A lighter blue for accents */
+  --hover-blue: #3377e0;      /* A slightly darker blue for hover effects */
+  --border-blue: #dee2e6;     /* A light gray for borders */
 }
 
 body {

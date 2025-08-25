@@ -50,7 +50,7 @@ const About = () => {
           >
             <div className="image-container">
               <motion.img 
-                src="src/assets/samarth_photo(2).jpg" 
+                src="/images/samarth_photo(2).jpg"
                 alt="Profile"
                 whileHover={{ rotate: 5 }}
                 initial={{ filter: "grayscale(100%)" }}
