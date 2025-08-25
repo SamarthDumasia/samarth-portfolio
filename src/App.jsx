@@ -28,7 +28,7 @@ function App() {
 
   return (
     <ThemeProvider>
-      <div className="App" data-theme="light">
+      <div className="App">
         <Navibar 
           scrollToHome={() => scrollToSection(homeRef)}
           scrollToAbout={() => scrollToSection(aboutRef)}
