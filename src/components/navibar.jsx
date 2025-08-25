@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import './Navibar.css';
+import './navibar.css';
 
 const NAV_LINKS = [
   { label: 'Home', key: 'home', prop: 'scrollToHome' },
