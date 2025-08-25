@@ -2,7 +2,7 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../context/themeContext';
 import { motion } from 'framer-motion';
-import './ThemeToggle.css';
+import './themeToggle.css';
 
 const ThemeToggle = () => {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
