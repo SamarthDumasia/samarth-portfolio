@@ -62,9 +62,9 @@ const About = () => {
                 initial={{ opacity: 0 }}
                 whileHover={{ opacity: 1 }}
               >
-                <a 
-                  href="file:///C:/VS%20Code/VS%20Code/personal/portfolio-website/sam-portfolio/src/assets/samarth_resume[4].pdf" 
-                  download 
+                <a
+                  href="/samarth_resume[4].pdf"
+                  download
                   className="download-cv-button"
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
