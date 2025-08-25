@@ -64,7 +64,7 @@ const About = () => {
               >
                 <a
                   href="/samarth_resume[4].pdf"
-                  download
+                  download="samarth_resume.pdf"
                   className="download-cv-button"
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
@@ -75,6 +75,18 @@ const About = () => {
                     Download CV
                   </motion.span>
                 </a>
+
+                <div className="social-links">
+                  <a href="https://linkedin.com/in/samarthdumasia" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://github.com/samarthdumasia" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-github"></i>
+                  </a>
+                  <a href="https://twitter.com/samarthdumasia" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-twitter"></i>
+                  </a>
+                </div>
               </motion.div>
             </div>
           </motion.div>
