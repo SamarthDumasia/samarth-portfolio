@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import './Sections.css';
+import './sections.css';
 
 const Home = () => {
   return (

@@ -1,7 +1,7 @@
 // src/sections/Contact.jsx
 import { useState, useRef, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
-import './Sections.css';
+import './sections.css';
 
 const Contact = () => {
   const form = useRef();
@@ -40,10 +40,10 @@ const Contact = () => {
 
     try {
       const result = await emailjs.sendForm(
-        'service_samarth',
-        'template_qlwelnm',
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         form.current,
-        'jpvvuFunvVULwfn7o'
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
       if (result.status === 200) {

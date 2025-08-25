@@ -1,7 +1,7 @@
 // src/sections/About.jsx
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useState, useRef } from 'react';
-import './Sections.css';
+import './sections.css';
 
 const About = () => {
   const [isHovered, setIsHovered] = useState(false);

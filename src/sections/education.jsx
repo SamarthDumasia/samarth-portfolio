@@ -1,6 +1,6 @@
 // src/sections/Education.jsx
 import { motion } from 'framer-motion';
-import './Sections.css';
+import './sections.css';
 
 const Education = () => {
   return (

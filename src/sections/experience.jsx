@@ -1,5 +1,5 @@
 // src/sections/Experience.jsx
-import './Sections.css';
+import './sections.css';
 
 const Experience = () => {
   return (

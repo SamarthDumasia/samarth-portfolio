@@ -1,7 +1,7 @@
 // src/sections/Projects.jsx
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import './Sections.css';
+import './sections.css';
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
