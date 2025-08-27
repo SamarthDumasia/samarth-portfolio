@@ -461,10 +461,12 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: clamp(1rem, 3vw, 2rem);
+  width: 100%;
+  max-width: var(--container-xl);
   margin: 0 auto;
+  padding: var(--spacing-md);
 }
 
 .project-card {
@@ -673,14 +675,14 @@
 
 /* sam DP Image */
 .sam_dp {
-  width: 150px; /* Adjust size if needed */
-  height: 150px; /* Maintain aspect ratio */
-  border-radius: 40%; /* Keep it circular */
-  border: #3d90ef 2px solid; /* Add a border */
-  box-shadow: 0 10px 30px rgba(84, 150, 250, 0.5); /* Optional shadow */
-  transition: transform 0.3s ease;
-  object-fit: cover; /* Ensure the image fits properly */
-  margin-top: 80px; /* Add margin to move it down */
+  width: clamp(120px, 15vw, 150px);
+  height: clamp(120px, 15vw, 150px);
+  border-radius: 40%;
+  border: 0.15rem solid var(--primary-blue);
+  box-shadow: 0 10px 30px rgba(84, 150, 250, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover;
+  margin-top: clamp(2rem, 5vh, 5rem);
 }
 
 .status-message {
