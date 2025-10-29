@@ -2,53 +2,75 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import './sections.css';
+import './projects.css';
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
   
-  // Sample project data - replace with your actual projects
   const projects = [
     {
-      title: "Eyes On Wheels - IoT Drowsiness Detection",
-      description: "Led development of IoT-based drowsiness detection system for road safety. Integrated sensors with ML and computer vision for real-time detection. Secured INR 35,000 SSIP grant.",
-      image: "/images/projects/eyes-on-wheels.jpg",
-      tags: ["IoT", "ML", "Computer Vision", "Arduino"],
-      github: "https://github.com/samarthdumasia/eyes-on-wheels",
-      live: "#"
+      id: 1,
+      title: 'Eyes On Wheels',
+      description: 'IoT-based drowsiness detection system for enhanced road safety. Integrates Computer Vision algorithms to detect drowsiness using OpenCV on Raspberry Pi hardware for real-time detection. Secured INR 35,000 grant under SSIP.',
+      image: '/images/projects/eyes-on-wheels.png',
+      category: ['IoT', 'Machine Learning', 'Computer Vision'],
+      link: '#',
+      github: 'https://github.com/samarthdumasia'
     },
     {
-      title: "Mute's Speaker - Sign Language Translator",
-      description: "Engineered real-time hand sign recognition system enabling communication for mute individuals. Implemented computer vision algorithms for gesture-to-speech translation.",
-      image: "/images/projects/mutes-speaker.jpg",
-      tags: ["Computer Vision", "IoT", "ML", "Python"],
-      github: "https://github.com/samarthdumasia/mutes-speaker",
-      live: "#"
+      id: 2,
+      title: "Mute's Speaker",
+      description: 'Innovative IoT project enabling mute individuals to communicate through real-time hand sign recognition. Developed gesture recognition system using computer vision algorithms for text-to-speech conversion.',
+      image: '/images/projects/mutes-speaker.jpeg',
+      category: ['IoT', 'Computer Vision', 'Machine Learning'],
+      link: '#',
+      github: 'https://github.com/samarthdumasia'
     },
     {
-      title: "Smart Home Monitoring System",
-      description: "Developed IoT-based home automation system with remote monitoring, voice control via Alexa/Google Assistant, and MQTT integration through Arduino IoT Cloud.",
-      image: "/images/projects/smart-home.jpg",
-      tags: ["IoT", "Arduino Cloud", "MQTT", "Automation"],
-      github: "https://github.com/samarthdumasia/smart-home",
-      live: "#"
+      id: 3,
+      title: 'Inventory Management System',
+      description: 'Full-stack inventory management web application built with React and Tailwind CSS. Features robust RESTful APIs using Express.js and Node.js with MongoDB database integration.',
+      image: '/images/projects/inventory-system.jpeg',
+      category: ['React', 'Node.js', 'MongoDB'],
+      link: '#',
+      github: 'https://github.com/samarthdumasia'
     },
     {
-      title: "Inventory Management System",
-      description: "Full-stack web application using React, Tailwind CSS, Express.js, Node.js, and MongoDB. Implemented RESTful APIs and responsive UI design.",
-      image: "/images/projects/inventory.jpg",
-      tags: ["React", "Node.js", "MongoDB", "Express"],
-      github: "https://github.com/samarthdumasia/inventory-manager",
-      live: "#"
+      id: 4,
+      title: 'Smart Home Monitoring System',
+      description: 'IoT-based home automation system enabling remote monitoring and control of lighting, gas/smoke sensors, and voice-activated devices. Integrated with Arduino IoT Cloud for real-time visualization.',
+      image: '/images/projects/smart-home.jpeg',
+      category: ['IoT', 'Arduino', 'Cloud'],
+      link: '#',
+      github: 'https://github.com/samarthdumasia'
+    },
+    {
+      id: 5,
+      title: 'Portfolio Website',
+      description: 'Personal portfolio website showcasing projects and skills, built with React and modern web technologies.',
+      image: '/images/projects/personal-portfolio.jpg',
+      category: ['node', 'mongodb'],
+      link: '#',
+      github: '#'
+    },
+    {
+      id: 6,
+      title: 'Chat Bot',
+      description: 'Real-time chat Bot with private messaging using OpenAI API.',
+      image: '/images/projects/chat-application.jpeg',
+  category: ['react', 'node'],
+      link: '#',
+      github: '#'
     }
   ];
 
   // Get unique categories for filter buttons
-  const categories = ['all', ...new Set(projects.flatMap(project => project.tags))];
+  const categories = ['all', ...new Set(projects.flatMap(project => project.category).filter(cat => cat !== 'socket'))];
 
   // Filter projects based on selected category
   const filteredProjects = filter === 'all' 
     ? projects 
-    : projects.filter(project => project.tags.includes(filter));
+    : projects.filter(project => project.category.includes(filter));
 
   return (
     <section className="projects-section">
@@ -86,7 +108,7 @@ const Projects = () => {
                   <a href={project.github} target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-github"></i>
                   </a>
-                  <a href={project.live} target="_blank" rel="noopener noreferrer">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
                     <i className="fas fa-external-link-alt"></i>
                   </a>
                 </div>
@@ -95,9 +117,9 @@ const Projects = () => {
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <div className="project-tags">
-                  {project.tags.map(tag => (
-                    <span key={tag} className="project-tag">
-                      {tag}
+                  {project.category.filter(cat => cat !== 'socket').map(cat => (
+                    <span key={cat} className="project-tag">
+                      {cat}
                     </span>
                   ))}
                 </div>

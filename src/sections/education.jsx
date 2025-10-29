@@ -20,12 +20,12 @@ const Education = () => {
           >
             <div className="timeline-dot"></div>
             <div className="timeline-content">
-              <h3>Secondary School Certificate (SSC)</h3>
-              <h4>10th School</h4>
-              <p className="timeline-date">2018 - 2019</p>
+              <h3>Bachelor of Technology (B.Tech) in Computer Science Engineering</h3>
+              <h4>P.P. Savani University, Surat, Gujarat</h4>
+              <p className="timeline-date">Expected 2026 | CGPA: 7.07/10</p>
               <p>
-                Completed my secondary education from SDRUMS School with a strong foundation in mathematics and science.
-                Actively participated in various extracurricular activities, including debate and science fairs.
+                Relevant Coursework: Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems,
+                Software Engineering, Computer Networks, Operating Systems, Internet Of Things
               </p>
             </div>
           </motion.div>
@@ -37,11 +37,15 @@ const Education = () => {
           >
             <div className="timeline-dot"></div>
             <div className="timeline-content">
-              <h3>Higher Secondary Certificate (HSC)</h3>
-              <h4>12th school</h4>
-              <p className="timeline-date">2020 - 2021</p>
+              <h3>Certifications</h3>
+              <h4>Professional Development</h4>
+              <p className="timeline-date">2024 - 2025</p>
               <p>
-                Completed my secondary education from NIOS National Institution of Open Schooling with a focus on science and mathematics.
+                • Google Cloud Platform (GCP) Certification
+                • Amazon Web Services (AWS) Certification
+                • IoT Wireless and Cloud Computing - Yonsei University
+                • Agile with Atlassian Jira
+                • Python for Everybody - University of Michigan
               </p>
             </div>
           </motion.div>

@@ -15,12 +15,12 @@ const About = () => {
   const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.8, 1, 0.8]);
 
   const skillData = [
-    { name: "IoT Development", level: 90, color: "#FF6B6B" },
-    { name: "Web Development", level: 85, color: "#4ECDC4" },
-    { name: "React", level: 80, color: "#45B7D1" },
+    { name: "React & Frontend", level: 90, color: "#FF6B6B" },
+    { name: "JavaScript", level: 85, color: "#4ECDC4" },
+    { name: "Python", level: 80, color: "#45B7D1" },
     { name: "C/C++", level: 85, color: "#96CEB4" },
-    { name: "Python", level: 80, color: "#FF6B6B" },
-    { name: "Cloud Platforms", level: 75, color: "#4ECDC4" },
+    { name: "IoT Development", level: 90, color: "#FF6B6B" },
+    { name: "Cloud (GCP/AWS)", level: 75, color: "#4ECDC4" },
   ];
 
   return (
@@ -100,20 +100,10 @@ const About = () => {
               Hello, I'm <span className="highlight">Samarth Dumasia</span>
             </motion.h3>
             <p>
-              Computer Science Engineering student with expertise in Internet of Things (IoT), 
-              web development, and software engineering. Currently serving as IoT Tech Lead at 
-              Google Development Group (GDG), P.P. Savani University.
+              I am a student at <strong>P.P. Savani University</strong>, currently pursuing my bachelor's degree in <strong>Btech CSE (Computer Science Engineering)</strong>. I am from <strong>Surat, Gujarat</strong>.
             </p>
-            <p>
-              Proficient in Java, JavaScript, HTML, CSS, React, Node.js, Express.js, MongoDB, 
-              and cloud computing platforms including GCP and AWS.
-            </p>
-            
-            <div className="contact-info">
-              <p>Location: <strong>Surat, Gujarat, India</strong></p>
-              <p>Email: <a href="mailto:samarthdumasia@gmail.com">samarthdumasia@gmail.com</a></p>
-              <p>Phone: <a href="tel:+918200429350">+91 8200429350</a></p>
-            </div>
+            <p>Email: <a href="mailto:samarthdumasia@gmail.com">samarthdumasia@gmail.com</a></p>
+            <p>Phone: <a href="tel:+918200429350">91+ 8200429350</a></p>
 
             <div className="skills-container">
               {skillData.map((skill, index) => (

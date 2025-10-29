@@ -34,7 +34,7 @@ const Home = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          Web Developer | Designer | Creative Thinker
+          IoT Engineering & Cloud Solutions Engineer | Bridging IoT with AI Automation | Innovator
         </motion.p>
 
         <motion.div

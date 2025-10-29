@@ -104,10 +104,10 @@ const Contact = () => {
           </div>
           
           <div className="social-links">
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/in/samarthdumasia" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-linkedin"></i>
             </a>
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/samarthdumasia" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github"></i>
             </a>
             <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">

@@ -9,12 +9,13 @@ const Experience = () => {
         <div className="timeline-item">
           <div className="timeline-dot"></div>
           <div className="timeline-content">
-            <h3>IOT Lead  </h3>
-            <h4>Google Development Group (GDG)</h4>
-            <p className="timeline-date">2022 - 2023</p>
+            <h3>IoT Tech Lead</h3>
+            <h4>Google Development Group (GDG), P.P. Savani University</h4>
+            <p className="timeline-date">2024 - 2025</p>
             <p>
-              In my 3rd year of Btech, I am leading the IOT team at GDG.
-              I am responsible for organizing workshops and events related to IOT.
+              • Lead and mentor 10+ peers in Internet of Things (IoT) development projects
+              • Organize workshops and technical sessions on IoT technologies
+              • Provide technical guidance on embedded systems and IoT protocols
             </p>
           </div>
         </div>
@@ -22,25 +23,26 @@ const Experience = () => {
         <div className="timeline-item">
           <div className="timeline-dot"></div>
           <div className="timeline-content">
-            <h3>SSIP</h3>
-            <h4>Eyes On Wheels</h4>
-            <p className="timeline-date">2022 - 2023</p>
+            <h3>Project Team Leader</h3>
+            <h4>Eyes On Wheels Project</h4>
+            <p className="timeline-date">2024 - 2025</p>
             <p>
-              I am working on a project called Eyes On Wheels, which is an IOT-based project.
-              The goal of this project is to help to reduce the number of accidents on roads using IOT devices,
-              which detects Eyes to ensure that the driver is sleepy or not and if yes it alerts the driver by a beeping sound.
+              • Led cross-functional team of 5 members in developing IoT-based safety solution
+              • Managed project timeline, resource allocation, and stakeholder communication
+              • Secured funding of INR 35,000 under Student Startup and Innovation Policy (SSIP)
             </p>
           </div>
         </div>
         <div className="timeline-item">
           <div className="timeline-dot"></div>
           <div className="timeline-content">
-            <h3>Intership</h3>
-            <h4>Company Name</h4>
-            <p className="timeline-date">2022 - future</p>
+            <h3>Active Member</h3>
+            <h4>Entrepreneur Business Club (EBC), P.P. Savani University</h4>
+            <p className="timeline-date">2024 - Present</p>
             <p>
-              soon I will be placed in a company for my internship.
-              I am looking for a company where I can learn and grow my skills.
+              • Actively contributing to 2 startup projects focused on technology innovation
+              • Collaborate with entrepreneurial teams on business development
+              • Participate in networking events and business development workshops
             </p>
           </div>
         </div>
