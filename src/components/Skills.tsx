@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ThreeCarousel } from "@/components/stack-carousel/ThreeCarousel";
+import { CAROUSEL_COUNT } from "@/components/stack-carousel/technologies";
 
 export function Skills() {
   return (
@@ -27,7 +28,7 @@ export function Skills() {
               scalable, and modern digital products.
             </p>
             <div className="mt-6 flex flex-col gap-3 md:mt-8 lg:hidden">
-              {["24 technologies", "Continuous rotation", "Tap to view full stack"].map(
+              {[`${CAROUSEL_COUNT} technologies`, "Continuous rotation", "Tap to view full stack"].map(
                 (item, i) => (
                   <motion.div
                     key={item}
@@ -44,7 +45,7 @@ export function Skills() {
               )}
             </div>
             <div className="mt-8 hidden flex-col gap-3 lg:flex">
-              {["24 technologies", "Continuous rotation", "Click to view full stack"].map(
+              {[`${CAROUSEL_COUNT} technologies`, "Continuous rotation", "Click to view full stack"].map(
                 (item, i) => (
                   <motion.div
                     key={item}

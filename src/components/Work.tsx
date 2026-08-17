@@ -11,8 +11,25 @@ const GITHUB_PROFILE = "https://github.com/samarthdumasia";
 const projects: ProjectData[] = [
   {
     n: "01",
+    name: "T-bot",
+    tag: "ROS2 · SLAM · Robotics",
+    desc: "Autonomous mapping and navigation robot built with ROS2, simulation, and sensor integration.",
+    details:
+      "Designed and developed T-bot as part of an advanced robotics program — implemented ROS2 nodes, sensor fusion, URDF modeling, SLAM-based mapping, and Gazebo/RViz2 simulation to validate navigation and control pipelines.",
+    highlights: [
+      "ROS2-based modular nodes",
+      "SLAM mapping and navigation",
+      "Gazebo simulation and RViz2 visualization",
+    ],
+    tech: ["ROS2", "SLAM", "Gazebo", "RViz2", "URDF", "C++", "Python"],
+    accent: "from-[#7c3aed] to-[#0ea5ff]",
+    visual: "horizon-fleet",
+    github: GITHUB_PROFILE,
+  },
+  {
+    n: "02",
     name: "Eyes On Wheels",
-    tag: "IoT · Machine Learning",
+    tag: "IoT · Raspberry Pi · Computer Vision · Machine Learning",
     desc: "IoT-based drowsiness detection system using sensors and computer vision to enhance road safety.",
     details:
       "Engineered an innovative drowsiness detection system combining Arduino sensors, machine learning, and real-time computer vision to identify driver fatigue and trigger smart alerts for accident prevention.",
@@ -21,13 +38,13 @@ const projects: ProjectData[] = [
       "ML-based pattern recognition",
       "Smart alert mechanisms for safety",
     ],
-    tech: ["Arduino", "Python", "ML", "IoT Sensors"],
+    tech: ["Raspberry Pi", "OpenCV", "Python", "ML", "IoT Sensors"],
     accent: "from-[#0ea5ff] to-[#7c3aed]",
     visual: "nerox",
     github: GITHUB_PROFILE,
   },
   {
-    n: "02",
+    n: "03",
     name: "Mute's Speaker",
     tag: "IoT · Computer Vision",
     desc: "Sign language translation system enabling mute individuals to communicate through gesture recognition.",
@@ -40,11 +57,11 @@ const projects: ProjectData[] = [
     ],
     tech: ["Python", "OpenCV", "ML", "TTS"],
     accent: "from-[#10b981] to-[#0ea5ff]",
-    visual: "horizon-fleet",
+    visual: "collab-code",
     github: GITHUB_PROFILE,
   },
   {
-    n: "03",
+    n: "04",
     name: "Smart Home Monitoring",
     tag: "IoT · Embedded Systems",
     desc: "IoT home automation system with remote monitoring, sensor integration, and voice control.",
@@ -57,7 +74,7 @@ const projects: ProjectData[] = [
     ],
     tech: ["Arduino", "IoT Cloud", "MQTT", "Node.js"],
     accent: "from-[#f43f5e] to-[#f59e0b]",
-    visual: "collab-code",
+    visual: "civic",
     github: GITHUB_PROFILE,
   },
 ];

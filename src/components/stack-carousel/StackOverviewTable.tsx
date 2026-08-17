@@ -100,7 +100,7 @@ export function StackOverviewTable() {
         </div>
       </motion.div>
 
-      <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain pr-0.5 sm:pr-1">
+      <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain pr-0.5 sm:pr-1 stack-overview-scroll">
         <div className="stack-overview-grid">
           {grouped.map((group, index) => (
             <CategoryColumn

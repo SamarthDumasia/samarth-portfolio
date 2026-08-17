@@ -9,15 +9,44 @@ const items = [
     desc: "Led development of IoT-based drowsiness detection system securing INR 35,000 funding from Student Startup and Innovation Policy.",
   },
   {
-    yr: "2024",
-    name: "Smart Home Monitoring System",
-    rank: "Deployed",
-    role: "IoT & Full-Stack Developer",
-    desc: "Designed and implemented IoT home automation with Arduino, sensors, MQTT, and voice control integration.",
+    yr: "2024–2025",
+    name: "IoT Tech Lead — Google Developer Group",
+    rank: "Recognition",
+    role: "IoT Tech Lead",
+    desc: "Led and mentored 10+ students in embedded systems and IoT development; organised workshops on sensor integration, automation, and microcontroller programming.",
   },
 ];
 
 const certs = [
+  {
+    name: "Resident Robotics Program (RRP) — Certificate of Program Completion",
+    issuer: "My Equation",
+    date: "01/08/26",
+    skills: ["Robotics", "ROS2", "Hardware Integration", "SLAM"],
+    docs: [
+      { type: "certificate", name: "RRP Certificate", href: "/images/My equation RRP.pdf" },
+    ],
+  },
+  {
+    name: "IoT (Internet of Things): Wireless and Cloud Computing",
+    issuer: "Yonsei University (Coursera)",
+    skills: ["IoT", "Wireless", "Cloud"],
+  },
+  {
+    name: "Python for Everybody",
+    issuer: "University of Michigan (Coursera)",
+    skills: ["Python", "Data Processing"],
+  },
+  {
+    name: "Work Smarter, Not Harder: Time Management for Personal and Professional Productivity",
+    issuer: "Coursera",
+    skills: ["Productivity", "Time Management"],
+  },
+  {
+    name: "Student Startup and Innovation Policy (SSIP) Grant Recipient",
+    issuer: "P.P. Savani University",
+    skills: ["Grant Award", "Project Funding"],
+  },
   {
     name: "Google Cloud Platform (GCP) Certification",
     issuer: "Google Cloud",
@@ -45,8 +74,7 @@ export function Hackathons() {
             <span className="h-px w-8 bg-muted-foreground/40" /> 005 — Recognition
           </div>
           <h2 className="type-section-title">
-            Hackathons &{" "}
-            <span className="text-electric-gradient">credentials</span>.
+            Achievements & <span className="text-electric-gradient">Certifications</span>
           </h2>
         </motion.div>
 
@@ -115,6 +143,17 @@ export function Hackathons() {
                   >
                     {s}
                   </span>
+                ))}
+                {c.docs?.map((d) => (
+                  <a
+                    key={d.href}
+                    href={d.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-2 mt-1 inline-block rounded-md bg-accent/5 px-2 py-1 text-[11px] text-electric hover:underline"
+                  >
+                    {d.name}
+                  </a>
                 ))}
               </div>
             </motion.div>
